@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irritating Funny Form</title>
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="formSection">
+    <div class="form-container">
+      <h2>😈 Welcome!</h2>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter email" />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter password" />
+      </div>
+      <button class="btn" id="verifyBtn">Verify</button>
+      <button class="btn" id="createBtn">Create</button>
+      <div class="message" id="message"></div>
+    </div>
+  </div>
+
+  <div id="simonSection" style="display:none; text-align:center;">
+    
+    <iframe src="simon says game/index.html" 
+            style="width:100vh; height:100vh; border:none; border-radius:12px;">
+    </iframe>
+  </div>
+
+  <div id="batteryPopup">
+    <h1 id="batteryEmoji">🔋</h1>
+    <p id="batteryMessage">Battery changed! Do you dare continue? 😜</p>
+    <button id="batteryBtn">Okay, let me work again</button>
+  </div>
+  
+  <div id="tabPopup" class="popup">
+    <div class="popup-content">
+      <span id="popupEmoji" class="emoji">🤡</span>
+      <p id="popupMessage">Wapas aa gaye?</p>
+      <button id="popupBtn">Ok Sorry 😂</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

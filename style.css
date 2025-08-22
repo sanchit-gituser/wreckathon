@@ -1,0 +1,162 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.btn {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #ff4757;
+}
+
+.btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.message {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #ffd369;
+    min-height: 20px;
+}
+
+/* battery */
+#batteryPopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    text-align: center;
+}
+
+#batteryPopup button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#batteryPopup button:hover {
+    background: #ff4757;
+}
+
+/* tab switch */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: pop 0.3s ease-in-out;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.emoji {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#popupBtn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#popupBtn:hover {
+    background: #e85a4f;
+}
