@@ -36,4 +36,4 @@ It includes multiple interactive and frustrating features like strict login rule
 
 ---
 
-
+[▶ Watch Demo Video](https://github.com/sanchit-gituser/wreckathon/raw/refs/heads/main/assets/demo.mp4)
